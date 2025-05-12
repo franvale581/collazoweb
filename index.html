@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COLLAZO MCL</title>
+    <!-- AOS LINK -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- styles css -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <img src="./assets/logo/logo-black-png.png" alt="Logo pulsante" class="pulsing-image">
+    </div>
+
+    <div class="video-background">
+        <video autoplay muted loop playsinline>
+            <source src="./assets/video/video.mp4" type="video/mp4" />
+            Tu navegador no soporta el video HTML5.
+        </video>
+    </div>
+
+    <!-- top banner -->
+    <div class="top-banner">
+        <div class="scrolling-text">
+            Lo grande se construye en silencio, paso a paso - COLLAZO MCLOPEZ 🔥
+        </div>
+    </div>
+
+    <!-- header - navbar -->
+    <header class="header">
+        <!-- Menú hamburguesa -->
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <!-- Logo centrado -->
+        <div class="logo">
+            <img src="./assets/logo/logo-black-png.png" alt="Logo">
+        </div>
+
+        <!-- Carrito -->
+        <div class="cart-label">
+            <i class="fa-solid fa-cart-shopping cart-icon">
+                <div class="cart-bubble">0</div>
+            </i>
+        </div>
+    </header>
+
+    <!-- Menú desplegable -->
+    <nav class="nav-menu" id="navMenu">
+        <img src="./assets/logo/collazo-logo.jpeg" class="nav-menu-img">
+        <ul>
+            <li><a href="#inicio" class="navbar-link">Inicio</a></li>
+            <li><a href="#MCLDROP" class="navbar-link">MCL DROP</a></li>
+            <li><a href="#redes-sociales" class="navbar-link">Redes Sociales</a></li>
+        </ul>
+    </nav>
+
+    <!-- carro desplegable -->
+
+    <div class="cart">
+        <h2>Productos</h2>
+
+        <div class="cart-container"></div>
+
+        <div class="divider"></div>
+
+        <div class="cart-total">
+            <p>Total:</p>
+            <span class="total">$</span>
+        </div>
+        <div class="btn-container">
+            <button class="btn-buy">Comprar</button>
+            <button class="btn-delete">Vaciar carrito</button>
+        </div>
+    </div>
+
+
+    <!-- hero section -->
+    <section class="hero" id="inicio">
+        <div class="hero-container">
+            <h1 class="hero-title" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="100">La forma más pura
+                del estilo</h1>
+        </div>
+        <!-- button custom add -->
+        <div class="scroll-btn">
+            <div class="main__action" data-aos="fade-up" data-aos-duration="2500" data-aos-delay="200">
+                <a class="main__scroll" href="#MCLDROP">
+                    <div class="main__scroll-box">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path
+                                d="M11.9997 13.1716L7.04996     8.22186L5.63574 9.63607L11.9997 16L18.3637 9.63607L16.9495 8.22186L11.9997 13.1716Z"
+                                fill="#21242794">
+                            </path>
+                        </svg>
+                    </div>
+
+                    <span class="main__scroll-text">scroll down</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- product section -->
+
+    <section class="product-section" id="MCLDROP">
+
+        <div class="product-section-banner" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+            data-aos-duration="4500">
+            <h2 class="banner-title"> MCL DROP </h2>
+            <p class="banner-p">elegancia - calidad - estilo</p>
+        </div>
+
+        <div class="product-carrousel" data-aos="fade-up" data-aos-offset="300" data-aos-easing="ease-in-sine"
+            data-aos-duration="4500">
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/product/product-front.jpeg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/product/product-side.jpeg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/product/product-back.jpeg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/product/product-int.jpeg" />
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+        </div>
+
+        <div class="product-info">
+            <p>55 USD</p>
+            <button type="button" class="btn-add">Comprar</button>
+        </div>
+
+    </section>
+
+    <!-- footer -->
+
+    <footer class="footer" id="redes-sociales">
+        <div class="footer-top">
+            <img class="logo-bounce" src="./assets/logo/logo-black-png.png" alt="logo">
+        </div>
+        <div class="footer-mid">
+            <ul>
+                <li class="footer-icon"><a href="https://www.instagram.com/collazomcl?igsh=MTNnYXdtMjFkejZ5dA%3D%3D&utm_source=qr" target="_blank"><i class="fa-brands fa-instagram"></a></i></li>
+                <li class="footer-bar"></li>
+                <li class="footer-icon"><a href="https://www.tiktok.com/@collazo.mcl?_t=ZT-8wIuC92N9qg&_r=1" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+                <li class="footer-bar"></li>
+                <li class="footer-icon"><a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <p> © All rights reserved to Focus Vision Web Service.</p>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" class="overlay"></div>
+
+
+    <!-- modal de add product -->
+    <div class="add-modal">Producto añadido</div>
+
+    <script src="./data.js"></script>
+    <script src="./main.js"></script>
+    <!-- aos script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- aos script init -->
+    <script>
+        AOS.init();
+    </script>
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cube",
+            grabCursor: true,
+            cubeEffect: {
+                shadow: true,
+                slideShadows: true,
+                shadowOffset: 20,
+                shadowScale: 0.94,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            autoplay: {
+                delay: 3500,
+                pauseOnMouseEnter: true,
+            },
+        });
+    </script>
+</body>
+
+</html>

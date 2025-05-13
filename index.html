@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- styles css -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- mediaqueris css -->
+     <link rel="stylesheet" href="./mediaqueris.css">
 </head>
 
 <body>
@@ -31,7 +33,7 @@
     <!-- top banner -->
     <div class="top-banner">
         <div class="scrolling-text">
-            Lo grande se construye en silencio, paso a paso - COLLAZO MCLOPEZ 🔥
+      Bienvenido a COLLAZO MCLOPEZ  🔥 🔥 🔥 <span>DESCUENTO EN SEGUNDAS UNIDADES $ 49.99</span>  🔥 🔥 🔥  Lo grande se construye en silencio, paso a paso - COLLAZO MCLOPEZ.
         </div>
     </div>
 
@@ -76,7 +78,7 @@
 
         <div class="cart-total">
             <p>Total:</p>
-            <span class="total">$</span>
+            <span class="total"></span>
         </div>
         <div class="btn-container">
             <button class="btn-buy">Comprar</button>
@@ -147,9 +149,11 @@
         </div>
 
         <div class="product-info">
-            <p>65 USD</p>
+            <div class="product-price">
+                <span>$ 65.00 </span>
+                <p>$ 55.00 </p>
+            </div>
             <button type="button" class="btn-add">Comprar</button>
-            <p class="product-descuento">55 usd con dos unidades</p>
         </div>
 
     </section>
@@ -234,6 +238,7 @@
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
+            loop: true,
             effect: "cube",
             grabCursor: true,
             cubeEffect: {
@@ -242,9 +247,9 @@
                 shadowOffset: 20,
                 shadowScale: 0.94,
             },
-            pagination: {
-                el: ".swiper-pagination",
-            },
+            // pagination: {
+            //     el: ".swiper-pagination",
+            // },
             autoplay: {
                 delay: 3500,
                 pauseOnMouseEnter: true,

@@ -1,0 +1,151 @@
+@media (max-width: 860px) {
+
+    /* hero */
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    /* custom buttom size */
+    .main__scroll-box svg {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    /* products */
+    .banner-title {
+        font-size: 2.4rem;
+    }
+
+    .banner-p {
+        font-size: 1rem;
+    }
+
+    .swiper {
+        width: 300px;
+        height: 190px;
+    }
+
+    .product-section-banner {
+        margin-top: 2rem;
+    }
+
+    .product-info {
+        margin-top: 0;
+    }
+
+    .product-price span,
+    .product-price p {
+        font-size: 1.2rem;
+    }
+
+    /*footer*/
+
+    .fa-instagram {
+        color: var(--white);
+        font-size: 1.2rem;
+        transition: all 0.2s ease-out;
+    }
+
+    .fa-tiktok {
+        color: var(--white);
+        font-size: 1.2rem;
+        transition: all 0.2s ease-out;
+    }
+
+    .fa-youtube {
+        color: var(--white);
+        font-size: 1.2rem;
+        transition: all 0.2s ease-out;
+    }
+
+    .footer-bottom {
+        font-size: .6rem;
+    }
+}
+
+
+@media (max-width: 580px) {
+
+    /*carrito*/
+    .cart {
+        right: -10000px;
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 426px) {
+
+    /* carro item */
+    .item-handler {
+        flex-direction: column-reverse;
+    }
+}
+
+@media (max-width: 390px) {
+
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .main__scroll-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        padding-top: 0;
+        padding-left: 1rem;
+        margin-top: -2.5rem;
+    }
+
+}
+
+@media (max-width: 380px) {
+    .hero {
+        padding-top: 0;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .main__scroll-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+        padding-top: 0;
+        padding-left: 1rem;
+        margin-top: -2.5rem;
+    }
+
+    .main__scroll-box svg {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    /* product section*/
+    .banner-title {
+        font-size: 2rem;
+    }
+
+    .banner-p {
+        font-size: .8rem;
+    }
+}
+
+
+@media (max-width: 368px) {
+
+    /* carro item*/
+    .item-info {
+        padding-left: 10px;
+    }
+
+    /* product */
+    .swiper {
+        width: 280px;
+        height: 170px;
+    }
+
+}

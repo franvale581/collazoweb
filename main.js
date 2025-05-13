@@ -13,20 +13,16 @@ const deleteBtn = document.querySelector('.btn-delete');
 const cartBubble = document.querySelector('.cart-bubble');
 
 //loader 
-
 window.addEventListener('load', () => {
   const loader = document.getElementById('loader');
 
   setTimeout(() => {
     loader.classList.add('fade-out');
-
-
     setTimeout(() => {
       loader.style.display = 'none';
-    }, 1000); // coincide con el transition: opacity 1s
-  }, 3000); // segundos de duración del loader
+    }, 1000);
+  }, 3000);
 });
-
 
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -100,11 +96,18 @@ const createCartProductTemplate = ({ id, name, price, cardImg, quantity }) => {
 };
 
 const showCartTotal = () => {
-  total.innerHTML = `${getCartTotal().toFixed(2)} $`;
+  total.innerHTML = `$ ${getCartTotal().toFixed(2)}`;
 };
 
 const getCartTotal = () => {
-  return cart.reduce((acc, cur) => acc + Number(cur.price) * cur.quantity, 0);
+  return cart.reduce((acc, cur) => acc + Number(getEffectivePrice(cur)) * cur.quantity, 0);
+};
+
+const getEffectivePrice = (product) => {
+  if (product.id === 1 && product.quantity >= 2 && product.price == 55) {
+    return 49.99;
+  }
+  return product.price;
 };
 
 const showAddModal = () => {

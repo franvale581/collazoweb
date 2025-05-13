@@ -147,8 +147,9 @@
         </div>
 
         <div class="product-info">
-            <p>55 USD</p>
+            <p>65 USD</p>
             <button type="button" class="btn-add">Comprar</button>
+            <p class="product-descuento">55 usd con dos unidades</p>
         </div>
 
     </section>
@@ -177,6 +178,43 @@
     <div id="overlay" class="overlay"></div>
 
 
+  <!-- Audio -->
+  <audio id="bg-music" src="./assets/audio/audio.mp3" loop></audio>
+
+  <!-- Botón de sonido -->
+  <button id="mute-btn">🔊</button>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const audio = document.getElementById('bg-music');
+      const muteBtn = document.getElementById('mute-btn');
+      
+      let audioStarted = false; // Para controlar que el audio se inicie solo tras una interacción
+
+      // Función para reproducir el audio
+      const startAudio = () => {
+        if (!audioStarted) {
+          audio.play().then(() => {
+            audioStarted = true; // Audio empieza a reproducirse
+          }).catch(err => {
+            console.warn('Autoplay bloqueado, el audio no se reprodujo:', err.message);
+          });
+        }
+      };
+
+      // Reproducir al hacer clic en el botón o cualquier otra interacción
+      muteBtn.addEventListener('click', () => {
+        startAudio(); // Inicia el audio cuando el usuario hace clic
+
+        // Mute/Unmute toggle
+        audio.muted = !audio.muted;
+        muteBtn.textContent = audio.muted ? '🔇' : '🔊';
+      });
+
+      // También puedes añadir otro evento de interacción como scroll, por si el usuario no hace clic.
+      window.addEventListener('scroll', startAudio); 
+    });
+  </script>
     <!-- modal de add product -->
     <div class="add-modal">Producto añadido</div>
 

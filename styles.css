@@ -55,19 +55,25 @@ html {
 .pulsing-image {
   width: 100px;
   height: auto;
-  opacity: 1;  /* La opacidad comienza en 1 para que sea visible */
+  opacity: 1;
+  /* La opacidad comienza en 1 para que sea visible */
   animation: pulseOpacity 2s ease-in-out infinite;
-  transition: opacity 1s ease;  /* Transición de opacidad al desaparecer */
+  transition: opacity 1s ease;
+  /* Transición de opacidad al desaparecer */
 }
 
 .loader.fade-out .pulsing-image {
-  opacity: 0;  /* Hace que el logo también se desvanezca cuando el loader se desvanezca */
+  opacity: 0;
+  /* Hace que el logo también se desvanezca cuando el loader se desvanezca */
 }
 
 @keyframes pulseOpacity {
-  0%, 100% {
+
+  0%,
+  100% {
     opacity: 0;
   }
+
   50% {
     opacity: 1;
   }
@@ -292,7 +298,8 @@ html {
   -webkit-backdrop-filter: blur(10px);
   background-color: rgba(0, 0, 0, 0.4);
   padding-top: 2rem;
-  transition: right 0.3s ease-in-out; /* <- Cambiar 'left' por 'right' */
+  transition: right 0.3s ease-in-out;
+  /* <- Cambiar 'left' por 'right' */
   z-index: 1000;
   font-family: "Poppins", sans-serif;
 }
@@ -302,6 +309,7 @@ html {
   flex-direction: column;
   gap: 20px;
 }
+
 /*OCULTAR BARRA DE SCROLL DEL CARRITO*/
 
 .cart::-webkit-scrollbar {
@@ -536,11 +544,11 @@ html {
 
 .product-section {
   width: 100%;
-  height: 40rem;
+  height: 50rem;
   display: flex;
   justify-content: start;
   flex-direction: column;
-  gap: 3rem;
+  gap: 8rem;
 }
 
 .product-section-banner {
@@ -550,7 +558,7 @@ html {
   flex-direction: column;
   gap: 1.5rem;
   width: 100%;
-  height: 8rem;
+  height: 6rem;
   color: var(--bg-grey);
 }
 
@@ -569,7 +577,13 @@ html {
   font-weight: 500;
 }
 
+.product-descuento {
+  font-size: 2rem;
+  color: #d62424e3;
+}
+
 .swiper {
+  margin-top: -5rem;
   width: 400px;
   height: 260px;
 }
@@ -642,95 +656,117 @@ html {
 
 
 .footer {
-   width: 100%;
-   height: 20rem;
-   background: var(--bg-grey);
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: column;
-   gap: 2rem;
- }
+  width: 100%;
+  height: 20rem;
+  background: var(--bg-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
 
- .footer-top img{
-   height: 12rem;
- }
+.footer-top img {
+  height: 12rem;
+}
 
- .footer-mid ul{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   flex-direction: row;
-   gap: 3rem;
- }
+.footer-mid ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 3rem;
+}
 
 .footer-bar {
-   border-radius: 1px;
-   width: 2px;
-   height: 20px;
-   background-color:var(--white);
-   display: inline-block;
-   opacity: 70%;
- }
+  border-radius: 1px;
+  width: 2px;
+  height: 20px;
+  background-color: var(--white);
+  display: inline-block;
+  opacity: 70%;
+}
 
- .fa-instagram {
-   color: var(--white);
-   font-size: 1.8rem;
-   transition: all 0.2s ease-out;
- }
+.fa-instagram {
+  color: var(--white);
+  font-size: 1.8rem;
+  transition: all 0.2s ease-out;
+}
 
- .fa-instagram:hover {
-   transform: scale(1.2);
-   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   text-shadow: 0 0 10px rgba(253, 89, 73, 0.7);
-   transition: all 0.2s ease-in;
- }
+.fa-instagram:hover {
+  transform: scale(1.2);
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(253, 89, 73, 0.7);
+  transition: all 0.2s ease-in;
+}
 
- .fa-tiktok {
-   color: var(--white);
-   font-size: 1.8rem;
-   transition: all 0.2s ease-out;
- }
+.fa-tiktok {
+  color: var(--white);
+  font-size: 1.8rem;
+  transition: all 0.2s ease-out;
+}
 
- .fa-tiktok:hover {
-   transform: scale(1.2);
-   background: radial-gradient(circle at 30% 107%, #25F4EE 0%, #FE2C55 50%, #FFFFFF 100%);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   text-shadow: 0 0 10px rgba(254, 44, 85, 0.7),
-                0 0 20px rgba(37, 244, 238, 0.5);
-   transition: all 0.2s ease-in;
- }
+.fa-tiktok:hover {
+  transform: scale(1.2);
+  background: radial-gradient(circle at 30% 107%, #25F4EE 0%, #FE2C55 50%, #FFFFFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(254, 44, 85, 0.7),
+    0 0 20px rgba(37, 244, 238, 0.5);
+  transition: all 0.2s ease-in;
+}
 
- .fa-youtube {
-   color: var(--white);
-   font-size: 1.8rem;
-   transition: all 0.2s ease-out;
- }
+.fa-youtube {
+  color: var(--white);
+  font-size: 1.8rem;
+  transition: all 0.2s ease-out;
+}
 
- .fa-youtube:hover {
-   transform: scale(1.2);
-   background: radial-gradient(circle at 30% 107%, #FF4E45 0%, #FF0000 50%, #ffffff7e 100%);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   text-shadow: 0 0 10px rgba(255, 0, 0, 0.7),
-                0 0 20px rgba(255, 78, 69, 0.5);
-   transition: all 0.2s ease-in;
- }
+.fa-youtube:hover {
+  transform: scale(1.2);
+  background: radial-gradient(circle at 30% 107%, #FF4E45 0%, #FF0000 50%, #ffffff7e 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 10px rgba(255, 0, 0, 0.7),
+    0 0 20px rgba(255, 78, 69, 0.5);
+  transition: all 0.2s ease-in;
+}
 
- .footer-bottom {
-   width: 100%;
-   height: 2rem;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background: var(--bg-grey);
-   color: var(--white);
-   border-top: 1px solid #161214;
-   font-size: .8rem;
-   font-style: italic;
-   font-family: "Poppins", sans-serif;
-   font-weight: 200;
- }
+.footer-bottom {
+  width: 100%;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-grey);
+  color: var(--white);
+  border-top: 1px solid #161214;
+  font-size: .8rem;
+  font-style: italic;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+
+/* audio btn */
+
+
+#mute-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #0b090ab2;
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 7px 7px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+#mute-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}

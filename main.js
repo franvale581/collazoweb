@@ -206,10 +206,6 @@ const completeBuy = () => {
   window.open(whatsappURL, "_blank");
 }
 
-setTimeout(() => {
-  resetCartItems();
-}, 2000);
-
 const deleteCart = () => {
   if (!cart.length) return;
   resetCartItems();

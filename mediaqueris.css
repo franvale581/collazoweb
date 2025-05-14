@@ -101,6 +101,11 @@
         animation: none;
 }
 
+    /* product */
+    .product-section {
+        height: 40rem;
+        gap: 7rem;
+    }
 }
 
 @media (max-width: 380px) {

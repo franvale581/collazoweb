@@ -94,9 +94,12 @@
         justify-content: center;
         flex-direction: column-reverse;
         padding-top: 0;
-        padding-left: 1rem;
         margin-top: -2.5rem;
     }
+
+    .main__action:hover .main__scroll-box {
+        animation: none;
+}
 
 }
 

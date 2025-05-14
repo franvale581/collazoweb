@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --bg-grey: #101118;
+  --white: #e9ecef;
+}
+
+
+  .simple-info {
+    height: 50rem;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: var(--bg-grey);
+  }
+
+  .section-title {
+    font-family: "Playfair Display", serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  .product-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 30px;
+  }
+
+  .text-content p {
+    margin-bottom: 12px;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .highlight {
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+
+  .quote {
+    font-family: "Playfair Display", serif;
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--bg-grey);
+    margin-top: 20px;
+  }
+
+  .note {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--bg-grey);
+  }
+
+  @media (max-width: 600px) {
+    .simple-info {
+      height: auto;
+    }
+  }

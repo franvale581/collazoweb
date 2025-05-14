@@ -441,6 +441,7 @@ html {
   gap: 1rem;
 }
 
+.btn-info,
 .btn-add,
 .btn-buy,
 .btn-delete {
@@ -455,6 +456,7 @@ html {
   letter-spacing: 1px;
 }
 
+.btn-info,
 .btn-buy,
 .btn-add,
 .btn-delete {
@@ -466,12 +468,18 @@ html {
   width: 100%;
 }
 
+.btn-info:hover,
 .btn-add:hover,
 .btn-buy:hover,
 .btn-delete:hover {
   background: var(--white);
   color: var(--bg-grey);
   transition: 0.3s all ease-in;
+}
+
+.btn-info {
+  text-align: center;
+  width: 120.58px;
 }
 
 

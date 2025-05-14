@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLLAZO MCL</title>
+    <meta name="description"
+        content="COLLAZO MCL es una marca de ropa que combina diseño urbano, actitud y elegancia contemporánea. Conocé nuestra colección." />
+    <meta name="keywords" content="ropa, moda urbana, clase, Collazo MCL, indumentaria, estilo." />
+    <meta name="author" content="COLLAZO MCL" />
+
+    <!-- Open Graph para compartir en redes (como Instagram, Facebook, WhatsApp) -->
+    <meta property="og:title" content="COLLAZO MCL — Moda urbana contemporánea" />
+    <meta property="og:description"
+        content="Ropa con carácter. Diseño, calidad y estilo para un mundo que no se detiene." />
+    <meta property="og:image" content="https://tusitio.com/images/og-image.jpg" />
+    <meta property="og:url" content="https://tusitio.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/logo/logo-black-png.png" type="image/x-icon" />
+
+    <!-- AOS LINK -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- styles css -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/info-mcl.css">
+    <!-- mediaqueris css -->
+    <link rel="stylesheet" href="./mediaqueris.css">
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="loader" class="loader">
+        <img src="./assets/logo/logo-black-png.png" alt="Logo pulsante" class="pulsing-image">
+    </div>
+
+    <div class="video-background">
+        <video autoplay muted loop playsinline>
+            <source src="./assets/video/video.mp4" type="video/mp4" />
+            Tu navegador no soporta el video HTML5.
+        </video>
+    </div>
+
+    <!-- top banner -->
+    <div class="top-banner">
+        <div class="scrolling-text">
+            Bienvenido a COLLAZO MCLOPEZ 🔥 🔥 🔥 <span>DESCUENTO EN SEGUNDAS UNIDADES $ 49.99</span> 🔥 🔥 🔥 Lo grande
+            se construye en silencio, paso a paso - COLLAZO MCLOPEZ.
+        </div>
+    </div>
+
+    <!-- header - navbar -->
+    <header class="header">
+        <!-- Menú hamburguesa -->
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <!-- Logo centrado -->
+        <div class="logo">
+            <img src="./assets/logo/logo-black-png.png" alt="Logo">
+        </div>
+
+        <!-- Carrito -->
+        <div class="cart-label">
+            <i class="fa-solid fa-cart-shopping cart-icon">
+                <div class="cart-bubble">0</div>
+            </i>
+        </div>
+    </header>
+
+    <!-- Menú desplegable -->
+    <nav class="nav-menu" id="navMenu">
+        <img src="./assets/logo/collazo-logo.jpeg" class="nav-menu-img">
+        <ul>
+            <li><a href="index.html" class="navbar-link">Inicio</a></li>
+        </ul>
+    </nav>
+
+    <!-- carro desplegable -->
+
+    <div class="cart">
+        <h2>Productos</h2>
+
+        <div class="cart-container"></div>
+
+        <div class="divider"></div>
+
+        <div class="cart-total">
+            <p>Total:</p>
+            <span class="total"></span>
+        </div>
+        <div class="btn-container">
+            <button class="btn-buy">Comprar</button>
+            <button class="btn-delete">Vaciar carrito</button>
+        </div>
+    </div>
+
+
+    <!-- info section -->
+<section class="simple-info">
+  <h2 class="section-title">INFORMACIÓN DEL PRODUCTO</h2>
+
+  <img class="product-image" src="./assets/product/product-side.jpeg" alt="Gorra edición especial" />
+
+  <div class="text-content">
+    <p class="highlight">Gorra de lujo edición especial</p>
+    <p>Hecha de gamuza y algodón premium, con detalles en negro y rojo.</p>
+    <p class="quote">“Todo es un proceso”</p>
+    <p class="note">— un recordatorio diario de tu camino al éxito.</p>
+
+    <br />
+
+    <p class="highlight">Con descuento especial.</p>
+    <p>Exclusiva. Limitada. Solo para los que creen en su visión.</p>
+  </div>
+</section>
+    <!-- footer -->
+
+    <footer class="footer" id="redes-sociales">
+        <div class="footer-top">
+            <img class="logo-bounce" src="./assets/logo/logo-black-png.png" alt="logo">
+        </div>
+        <div class="footer-mid">
+            <ul>
+                <li class="footer-icon"><a
+                        href="https://www.instagram.com/collazomcl?igsh=MTNnYXdtMjFkejZ5dA%3D%3D&utm_source=qr"
+                        target="_blank"><i class="fa-brands fa-instagram"></a></i></li>
+                <li class="footer-bar"></li>
+                <li class="footer-icon"><a href="https://www.tiktok.com/@collazo.mcl?_t=ZT-8wIuC92N9qg&_r=1"
+                        target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+                <li class="footer-bar"></li>
+                <li class="footer-icon"><a href="https://www.youtube.com/" target="_blank"><i
+                            class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <div class="footer-bottom">
+        <p> © All rights reserved to Focus Vision Web Service.</p>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" class="overlay"></div>
+
+
+    <!-- Audio -->
+    <audio id="bg-music" src="./assets/audio/audio.mp3" loop></audio>
+
+    <!-- Botón de sonido -->
+    <button id="mute-btn">🔊</button>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const audio = document.getElementById('bg-music');
+            const muteBtn = document.getElementById('mute-btn');
+
+            let audioStarted = false; // Para controlar que el audio se inicie solo tras una interacción
+
+            // Función para reproducir el audio
+            const startAudio = () => {
+                if (!audioStarted) {
+                    audio.play().then(() => {
+                        audioStarted = true; // Audio empieza a reproducirse
+                    }).catch(err => {
+                        console.warn('Autoplay bloqueado, el audio no se reprodujo:', err.message);
+                    });
+                }
+            };
+
+            // Reproducir al hacer clic en el botón o cualquier otra interacción
+            muteBtn.addEventListener('click', () => {
+                startAudio(); // Inicia el audio cuando el usuario hace clic
+
+                // Mute/Unmute toggle
+                audio.muted = !audio.muted;
+                muteBtn.textContent = audio.muted ? '🔇' : '🔊';
+            });
+
+            // También puedes añadir otro evento de interacción como scroll, por si el usuario no hace clic.
+            window.addEventListener('scroll', startAudio);
+        });
+    </script>
+    <!-- modal de add product -->
+    <div class="add-modal">Producto añadido</div>
+
+    <script src="./data.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

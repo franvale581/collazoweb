@@ -72,6 +72,10 @@
         width: 100%;
     }
 
+    /* correccion de hover*/
+    .main__action:hover .main__scroll-box {
+        animation: none;
+
 }
 
 @media (max-width: 426px) {

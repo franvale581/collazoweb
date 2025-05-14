@@ -11,6 +11,12 @@
         height: 4rem;
     }
 
+        /* correccion de hover*/
+    .main__action:hover .main__scroll-box {
+        animation: none;
+
+    }
+
     /* products */
     .banner-title {
         font-size: 2.4rem;

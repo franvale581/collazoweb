@@ -211,6 +211,7 @@ const deleteCart = () => {
   resetCartItems();
 }
 
+
 const disableBtn = (btn) => {
   btn.classList.toggle("disabled", !cart.length);
 };

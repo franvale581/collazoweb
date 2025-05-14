@@ -169,16 +169,51 @@ const resetCartItems = () => {
   updateCartState();
 };
 
-const completeCartAction = (confirmMsg, successMsg) => {
-  if (!cart.length) return;
-  if (window.confirm(confirmMsg)) {
-    resetCartItems();
-    alert(successMsg);
-  }
+// const completeCartAction = (confirmMsg, successMsg) => {
+//   if (!cart.length) return;
+//   if (window.confirm(confirmMsg)) {
+//     resetCartItems();
+//     alert(successMsg);
+//   }
+// };
+
+// const completeBuy = () => completeCartAction("¿Desea completar su compra?", "¡Gracias por su compra!");
+// const deleteCart = () => completeCartAction("¿Desea vaciar el carrito?", "No hay productos en el carrito");
+
+const getTotal = () => {
+  return cart.reduce((acc, cur) => acc + Number(getEffectivePrice(cur)) * cur.quantity, 0);
 };
 
-const completeBuy = () => completeCartAction("¿Desea completar su compra?", "¡Gracias por su compra!");
-const deleteCart = () => completeCartAction("¿Desea vaciar el carrito?", "No hay productos en el carrito");
+const createWhatsappMessage = () => {
+  const phoneNumber = "18138454354"
+  const total = getTotal();
+
+
+  const message = cart.map(
+    (item) => `- *${item.quantity} x ${item.name} ($${getEffectivePrice(item)})*`
+  ).join("\n");
+
+  const finalMessage = `Hola, quisiera comprar los siguientes productos:\n${message}\n*Total: $${total.toFixed(2)}.*`;
+
+
+  return `https://wa.me/${phoneNumber}?text=${encodeURIComponent(finalMessage)}`;
+};
+
+const completeBuy = () => {
+  if (!cart.length) return;
+
+  const whatsappURL = createWhatsappMessage();
+  window.open(whatsappURL, "_blank");
+}
+
+setTimeout(() => {
+  resetCartItems();
+}, 2000);
+
+const deleteCart = () => {
+  if (!cart.length) return;
+  resetCartItems();
+}
 
 const disableBtn = (btn) => {
   btn.classList.toggle("disabled", !cart.length);
